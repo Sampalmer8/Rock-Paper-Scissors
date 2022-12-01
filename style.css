@@ -49,3 +49,15 @@ button:hover {
     background-color: rgb(0, 153, 0);
     cursor: pointer;
 }
+
+span {
+    font-size: 30px;
+}
+
+.cpuThing {
+    margin-right: 20px;
+}
+
+.playerThing {
+    margin-left: 20px;
+}
