@@ -13,12 +13,12 @@
     <h1>Rock Paper Scissors</h1>
 
     <p>
-      <span class="cpuThing">Cpu Score: --</span
-      ><button id="playBtn">PLAY</button
-      ><span class="playerThing">Your Score: --</span>
+      <span class="cpuThing">Cpu Score: <span id="cpuOut">--</span></span>
+      <span class="playerThing">Your Score: <span id="userOut">--</span>
     </p>
 
-    <canvas id="canvas"></canvas>
+    <p><button id="score">Reset Score</button></p>
+
     <p>
       <button id="rockBtn"><i class="fa-solid fa-hand-back-fist"></i></button>
       <button id="paperBtn"><i class="fa-solid fa-hand"></i></button>
@@ -26,5 +26,7 @@
         <i class="fa-solid fa-hand-scissors"></i>
       </button>
     </p>
+
+    <canvas id="canvas"></canvas>
   </body>
 </html>
