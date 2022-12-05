@@ -1,0 +1,113 @@
+html { 
+    background-color: rgb(115, 0, 192);
+}
+
+body {
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px #000000
+}
+
+canvas {
+    border: 1px solid rgb(97, 6, 133);
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+i {
+    font-size: 50px;
+    color: white;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#vsFriend {
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgb(47, 56, 180); 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#vsFriend:hover {
+    background-color: rgb(81, 88, 187);
+    cursor: pointer;
+}
+
+#vsCpu {
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgb(47, 56, 180);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#vsCpu:hover {
+    background-color: rgb(81, 88, 187);
+    cursor: pointer;
+}
+
+#rockBtn {
+    margin-right: 15px;
+}
+
+#scissorsBtn {
+    margin-left: 15px;
+}
+
+button {
+    border-radius: 110px;
+    padding: 15px;
+    background-color: rgb(66, 66, 66);
+}
+
+button:hover {
+    background-color: rgb(88, 88, 88);
+    cursor: pointer;
+}
+
+span {
+    font-size: 30px;
+}
+
+.cpuThing {
+    margin-right: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000
+}
+
+.playerThing {
+    margin-left: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000
+}
+
+#score {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(151, 0, 143);
+    color: white;
+}
+
+#score:hover {
+    background-color: rgb(177, 73, 172);
+}
+
+#CanvasThing {
+    font-size: 25px;
+    margin-top: 10px;
+    color: aliceblue;
+}

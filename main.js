@@ -22,6 +22,7 @@ let cnv = document.getElementById("canvas");
 let ctx = cnv.getContext("2d");
 cnv.width = 600;
 cnv.height = 600;
+ctx.textAlign = "center";
 
 // Person Choosing Sign
 document.getElementById("scissorsBtn").addEventListener("click", sciClicked);
@@ -30,22 +31,31 @@ document.getElementById("paperBtn").addEventListener("click", paperClicked);
 
 function rockClicked() {
   if (paper === false && scissors === false) {
-  rock = true;
+    rock = true;
   }
+  displayRock();
+  setTimeout(displayPaper, 1000);
+  setTimeout(displayScissors, 2000);
   setTimeout(rockChoose, 3000);
 }
 
 function paperClicked() {
   if (rock === false && scissors === false) {
-  paper = true;
+    paper = true;
   }
+  displayRock();
+  setTimeout(displayPaper, 1000);
+  setTimeout(displayScissors, 2000);
   setTimeout(papChoose, 3000);
 }
 
 function sciClicked() {
   if (paper === false && rock === false) {
-  scissors = true;
+    scissors = true;
   }
+  displayRock();
+  setTimeout(displayPaper, 1000);
+  setTimeout(displayScissors, 2000);
   setTimeout(sciChoose, 3000);
 }
 
@@ -53,26 +63,29 @@ function sciClicked() {
 function rockChoose() {
   let rockNum = Math.random();
 
+  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillRect(0, 0, cnv.width, cnv.height);
+
   if (rockNum <= 0.333) {
     console.log("CPU chose rock");
     ctx.drawImage(imageObj, 175, 0, 256, 256);
     ctx.font = "42px Comic Sans MS";
     ctx.fillStyle = "red";
-    ctx.fillText("You Tied!", 210, 300);
+    ctx.fillText("You Tied!", 300, 300);
   } else if (rockNum <= 0.666) {
     cpuScore++;
     console.log("CPU chose paper");
     ctx.drawImage(imagePap, 175, 30, 256, 256);
     ctx.font = "42px Comic Sans MS";
     ctx.fillStyle = "red";
-    ctx.fillText("You Lose!", 210, 300);
+    ctx.fillText("You Lose!", 300, 300);
   } else {
     score++;
-    console.log("CPU chose paper");
-    ctx.drawImage(imageSci, 175, 30, 256, 256);
+    console.log("CPU chose scissors");
+    ctx.drawImage(imageSci, 175, 30, 225, 225);
     ctx.font = "42px Comic Sans MS";
     ctx.fillStyle = "red";
-    ctx.fillText("You Won!", 210, 300);
+    ctx.fillText("You Won!", 300, 300);
   }
   document.getElementById("userOut").innerHTML = score;
   document.getElementById("cpuOut").innerHTML = cpuScore;
@@ -82,26 +95,29 @@ function rockChoose() {
 function papChoose() {
   let papNum = Math.random();
 
+  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillRect(0, 0, cnv.width, cnv.height);
+
   if (papNum <= 0.333) {
     console.log("CPU chose paper");
     ctx.drawImage(imagePap, 175, 0, 256, 256);
     ctx.font = "42px Comic Sans MS";
     ctx.fillStyle = "red";
-    ctx.fillText("You Tied!", 210, 300);
+    ctx.fillText("You Tied!", 300, 300);
   } else if (papNum <= 0.666) {
     cpuScore++;
     console.log("CPU chose scissors");
-    ctx.drawImage(imageSci, 175, 30, 256, 256);
+    ctx.drawImage(imageSci, 175, 30, 225, 225);
     ctx.font = "42px Comic Sans MS";
     ctx.fillStyle = "red";
-    ctx.fillText("You Lose!", 210, 300);
+    ctx.fillText("You Lose!", 300, 300);
   } else {
     score++;
     console.log("CPU chose rock");
     ctx.drawImage(imageObj, 175, 30, 256, 256);
     ctx.font = "42px Comic Sans MS";
     ctx.fillStyle = "red";
-    ctx.fillText("You Won!", 210, 300);
+    ctx.fillText("You Won!", 300, 300);
   }
   document.getElementById("userOut").innerHTML = score;
   document.getElementById("cpuOut").innerHTML = cpuScore;
@@ -111,26 +127,29 @@ function papChoose() {
 function sciChoose() {
   let sciNum = Math.random();
 
+  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillRect(0, 0, cnv.width, cnv.height);
+
   if (sciNum <= 0.333) {
     console.log("CPU chose scissors");
-    ctx.drawImage(imageSci, 175, 0, 256, 256);
+    ctx.drawImage(imageSci, 175, 0, 225, 225);
     ctx.font = "42px Comic Sans MS";
     ctx.fillStyle = "red";
-    ctx.fillText("You Tied!", 210, 300);
+    ctx.fillText("You Tied!", 300, 300);
   } else if (sciNum <= 0.666) {
     cpuScore++;
     console.log("CPU chose rock");
     ctx.drawImage(imageObj, 175, 30, 256, 256);
     ctx.font = "42px Comic Sans MS";
     ctx.fillStyle = "red";
-    ctx.fillText("You Lose!", 210, 300);
+    ctx.fillText("You Lose!", 300, 300);
   } else {
     score++;
     console.log("CPU chose paper");
     ctx.drawImage(imagePap, 175, 30, 256, 256);
     ctx.font = "42px Comic Sans MS";
     ctx.fillStyle = "red";
-    ctx.fillText("You Won!", 210, 300);
+    ctx.fillText("You Won!", 300, 300);
   }
   document.getElementById("userOut").innerHTML = score;
   document.getElementById("cpuOut").innerHTML = cpuScore;
@@ -152,9 +171,33 @@ function clearScore() {
   cpuScore = 0;
   clearCnv();
   if (score === 0) {
-    document.getElementById("userOut").innerHtml = "--";
+    document.getElementById("userOut").innerHTML = "--";
   }
   if (cpuScore === 0) {
     document.getElementById("cpuOut").innerHTML = "--";
   }
+}
+
+function displayRock() {
+  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillRect(0, 0, cnv.width, cnv.height);
+  ctx.font = "42px Comic Sans MS";
+  ctx.fillStyle = "red";
+  ctx.fillText("Rock!", 300, 300);
+}
+
+function displayPaper() {
+  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillRect(0, 0, cnv.width, cnv.height);
+  ctx.font = "42px Comic Sans MS";
+  ctx.fillStyle = "red";
+  ctx.fillText("Paper!", 300, 300);
+}
+
+function displayScissors() {
+  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillRect(0, 0, cnv.width, cnv.height);
+  ctx.font = "42px Comic Sans MS";
+  ctx.fillStyle = "red";
+  ctx.fillText("Scissors!", 300, 300);
 }
