@@ -83,13 +83,14 @@ span {
 .cpuThing {
     margin-right: 20px;
     color: white;
-    text-shadow: 2px 2px 4px #000000
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .playerThing {
     margin-left: 20px;
     color: white;
-    text-shadow: 2px 2px 4px #000000
+    text-shadow: 2px 2px 4px #000000;
+    rotate: rotateX(150deg);
 }
 
 #score {
@@ -111,3 +112,4 @@ span {
     margin-top: 10px;
     color: aliceblue;
 }
+

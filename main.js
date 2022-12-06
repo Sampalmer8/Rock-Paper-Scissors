@@ -63,7 +63,7 @@ function sciClicked() {
 function rockChoose() {
   let rockNum = Math.random();
 
-  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillStyle = "#F3DE8A";
   ctx.fillRect(0, 0, cnv.width, cnv.height);
 
   if (rockNum <= 0.333) {
@@ -95,7 +95,7 @@ function rockChoose() {
 function papChoose() {
   let papNum = Math.random();
 
-  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillStyle = "#F3DE8A";
   ctx.fillRect(0, 0, cnv.width, cnv.height);
 
   if (papNum <= 0.333) {
@@ -127,7 +127,7 @@ function papChoose() {
 function sciChoose() {
   let sciNum = Math.random();
 
-  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillStyle = "#F3DE8A";
   ctx.fillRect(0, 0, cnv.width, cnv.height);
 
   if (sciNum <= 0.333) {
@@ -179,7 +179,7 @@ function clearScore() {
 }
 
 function displayRock() {
-  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillStyle = "#F3DE8A";
   ctx.fillRect(0, 0, cnv.width, cnv.height);
   ctx.font = "42px Comic Sans MS";
   ctx.fillStyle = "red";
@@ -187,7 +187,7 @@ function displayRock() {
 }
 
 function displayPaper() {
-  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillStyle = "#F3DE8A";
   ctx.fillRect(0, 0, cnv.width, cnv.height);
   ctx.font = "42px Comic Sans MS";
   ctx.fillStyle = "red";
@@ -195,7 +195,7 @@ function displayPaper() {
 }
 
 function displayScissors() {
-  ctx.fillStyle = "rgb(0, 192, 0)";
+  ctx.fillStyle = "#F3DE8A";
   ctx.fillRect(0, 0, cnv.width, cnv.height);
   ctx.font = "42px Comic Sans MS";
   ctx.fillStyle = "red";

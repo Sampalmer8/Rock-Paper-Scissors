@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(4, 145, 163);
+    background-color:#F3DE8A;
 }
 
 body {
@@ -13,6 +13,12 @@ canvas {
     margin: auto;
     margin-top: 20px;
     text-align: center;
+    border-radius: 25px;
+}
+
+h1 {
+    color: rgb(180, 59, 22);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 i {
@@ -21,29 +27,30 @@ i {
 }
 
 a {
-    color: black;
     text-decoration: none;
+    color: rgb(180, 59, 22);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #vsFriend {
     margin-right: 20px;
     padding: 10px;
-    background-color: rgba(157, 255, 0, 0.575); 
+    background-color: #EB9486; 
 }
 
 #vsFriend:hover {
-    background-color: rgb(0, 163, 0);
+    background-color: #CAE7B9;
     cursor: pointer;
 }
 
 #vsCpu {
     margin-right: 20px;
     padding: 10px;
-    background-color: rgb(0, 163, 0); 
+    background-color: #EB9486; 
 }
 
 #vsCpu:hover {
-    background-color: rgb(0, 163, 0);
+    background-color: #CAE7B9;
     cursor: pointer;
 }
 
@@ -58,21 +65,25 @@ a {
 button {
     border-radius: 110px;
     padding: 15px;
-    background-color: rgb(66, 66, 66);
+    background-color: #EB9486;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(180, 59, 22);
 }
 
 button:hover {
-    background-color: rgb(88, 88, 88);
+    background-color: #CAE7B9;
     cursor: pointer;
 }
 
 #playBtn:hover {
-    background-color: rgb(0, 153, 0);
+    background-color: #CAE7B9;
     cursor: pointer;
 }
 
 span {
     font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(180, 59, 22);
 }
 
 .cpuThing {
@@ -89,9 +100,9 @@ span {
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgb(0, 151, 0);
+    background-color: #EB9486;
 }
 
 #score:hover {
-    background-color: rgb(0, 163, 0);
+    background-color: #CAE7B9;
 }
