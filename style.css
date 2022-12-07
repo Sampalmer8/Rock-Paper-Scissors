@@ -19,6 +19,8 @@ canvas {
 h1 {
     color: rgb(180, 59, 22);
     font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349)
 }
 
 i {
@@ -30,6 +32,7 @@ a {
     text-decoration: none;
     color: rgb(180, 59, 22);
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 #vsFriend {
@@ -84,6 +87,7 @@ span {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(180, 59, 22);
+    text-shadow: 5px 5px 5px #00000077
 }
 
 .cpuThing {

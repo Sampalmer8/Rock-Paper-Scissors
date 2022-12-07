@@ -12,16 +12,23 @@
   <body>
     <h1>Play a Friend!</h1>
 
-    <p><button id="vsFriend"><a href="vs.html">VS a Friend</a></button><button id="vsCpu"><a href="index.html">VS the CPU</a></button></p>
-
     <p>
-      <span class="cpuThing">Player 1: <span id="cpuOut">--</span></span>
-      <span class="playerThing">Player 2: <span id="userOut">--</span>
+      <a href="vs.html"><button id="vsFriend">VS a Friend</button></a
+      ><a href="index.html"><button id="vsCpu">VS the CPU</button></a>
+    </p>
+
+    <p class="scores">
+      <span class="otherSpace"
+        >Player 1: <span id="player1Score">--</span></span
+      >
+      <span class="playerSpace"
+        >Player 2: <span id="player2Score">--</span></span
+      >
     </p>
 
     <p><button id="score" type="reset">Reset Score</button></p>
 
-    <br>
+    <br />
 
     <p id="CanvasThing">Player 1:</p>
     <canvas id="canvas"></canvas>

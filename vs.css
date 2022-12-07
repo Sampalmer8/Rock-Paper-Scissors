@@ -9,7 +9,7 @@ body {
 
 h1{
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     text-shadow: 5px 5px 5px #000000
 }
@@ -69,6 +69,7 @@ button {
     border-radius: 110px;
     padding: 15px;
     background-color: rgb(66, 66, 66);
+    color: white;
 }
 
 button:hover {
@@ -80,17 +81,18 @@ span {
     font-size: 30px;
 }
 
-.cpuThing {
+.scores {
     margin-right: 20px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.playerThing {
+.playerSpace {
     margin-left: 20px;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    rotate: rotateX(150deg);
+}
+
+.otherSpace {
+    margin-right: 20px;
 }
 
 #score {
@@ -101,6 +103,7 @@ span {
     padding-bottom: 10px;
     background-color: rgb(151, 0, 143);
     color: white;
+    text-shadow: 5px 5px 5px #000000
 }
 
 #score:hover {
@@ -111,5 +114,6 @@ span {
     font-size: 25px;
     margin-top: 10px;
     color: aliceblue;
+    text-shadow: 5px 5px 5px #000000
 }
 
