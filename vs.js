@@ -57,7 +57,7 @@ addEventListener("keypress", (event) => {
     console.log("Player2 chose scissors");
   }
 
-  if (player1 >= 1 && player2 >= 1) {
+  if (player1 === 1 && player2 === 1) {
     startgame();
   }
 });
